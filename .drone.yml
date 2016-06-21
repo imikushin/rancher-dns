@@ -1,4 +1,3 @@
-image: rancher/dind:v1.10.0-rancher1
+image: golang:1.6.2
 script:
- - wrapdocker
- - make ci
+ - ARCH=amd64 ./scripts/ci

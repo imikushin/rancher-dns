@@ -1,3 +1,6 @@
 #!/bin/bash
 
-exec $(dirname $0)/ci
+cd $(dirname $0)
+
+./build
+./package
